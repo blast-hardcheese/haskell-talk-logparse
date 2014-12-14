@@ -1,3 +1,7 @@
+import Control.Applicative ((<$>))
+
+import Log.LogAnalysis
+
 main = do
-  logs <- readFile "serverlogs.log"
-  putStrLn $ head $ lines logs
+  logs <- parse <$> readFile "serverlogs.log"
+  putStrLn $ head $ show <$> logs
