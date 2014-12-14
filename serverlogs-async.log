@@ -1,0 +1,47 @@
+I 1418590217 configd[31]: DHCP en1: defending IP 192.168.0.238 against BonjourSleepProxy 00:1f:f3:3d:d5:ff 1 (of 5)
+I 1418590246 kernel[0]: AppleThunderboltGenericHAL::earlyWake - complete - took 0 milliseconds
+I 1418592418 kernel[0]: The USB device HubDevice (Port 1 of Hub at 0xfd000000) may have caused a wake by issuing a remote wakeup (2)
+E 5 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 62, ErrLogCount 2 ResolverIntf:5
+I 1418592417 netbiosd[12061]: network_reachability_changed : network is not reachable, netbiosd is shutting down
+I 1418592418 kernel[0]: AppleThunderboltGenericHAL::earlyWake - complete - took 1 milliseconds
+I 1418592417 kernel[0]: AirPort_Brcm43xx::powerChange: System Wake - Full Wake/ Dark Wake / Maintenance wake
+I 1418592418 kernel[0]: TBT W (1): 0 [x]
+E 25 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 6 ResolverIntf:5
+I 1418590217 kernel[0]: en1 duplicate IP address 192.168.0.238 sent from address 00:1f:f3:3d:d5:ff
+I 1418592417 sharingd[357]: 13:26:57.797 : SDStatusMonitor::kStatusWirelessPowerChanged
+W 1418592418 discoveryd[55]: Basic Bonjour,Warn Warning: IPv6 listener multicast send failed en1, 49
+I 1418592417 UserEventAgent[21]: Captive: CNPluginHandler en1: Inactive
+E 30 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 7 ResolverIntf:5
+I 1418592417 kernel[0]: en1: Supported channels 1 2 3 4 5 6 7 8 9 10 11 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 149 153 157 161 165
+W 1418592417 discoveryd[55]: Basic Bonjour,Warn Warning: IPv6 listener multicast send failed en1, 49
+E 20 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 5 ResolverIntf:5
+I 1418592417 kernel[0]: en1::IO80211Interface::postMessage bssid changed
+W 1418592417 discoveryd[55]: Basic Warn DD_Warn: Corrupt NSEC RDATA size
+I 1418592417 kernel[0]: Previous sleep cause: 5
+E 40 1418592417 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 9 ResolverIntf:5
+I 1418592418 kernel[0]: en1: 802.11d country code set to 'US'.
+I 1418592417 networkd[263]: +[NETLedBelly stopFastFail] Clearing ledbelly failure cache
+I 1418590246 kernel[0]: AirPort_Brcm43xx::powerChange: System Sleep 
+E 10 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 3 ResolverIntf:5
+I 1418592417 configd[31]: network changed: v4(en1-:192.168.0.238) DNS- Proxy-
+W 1418590227 loginwindow[73]: CoreAnimation: warning, deleted thread with uncommitted CATransaction; set CA_DEBUG_TRANSACTIONS=1 in environment to log backtraces.
+I 1418590244 kernel[0]: Failed to get hibernate image filename
+E 50 1418592417 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 11 ResolverIntf:5
+I 1418590245 kernel[0]: haxm_error: Aaha.........we see hax is in sleep state.
+I 1418592417 configd[31]: setting hostname to "rawrbookpro.local"
+I 1418590246 kernel[0]: haxm_error: sleep tsc 6e4b8285293
+E 0 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 169.254.159.125 Port 56989 errno 50, fd 60, ErrLogCount 1 ResolverIntf:0
+E 15 1418592420 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 4 ResolverIntf:5
+I 1418592417 kernel[0]: wlEvent: en1 en1 Link DOWN virtIf = 0
+I 1418592417 sharingd[357]: 13:26:57.136 : SDStatusMonitor::kStatusWirelessPowerChanged
+I 1418592417 discoveryd[55]: Basic WABServer NetResolverEvent no resolvers, resetting domains
+E 45 1418592417 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 10 ResolverIntf:5
+E 55 1418592417 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 12 ResolverIntf:5
+W 1418592418 discoveryd[55]: Basic Bonjour,Warn Warning: IPv6 listener multicast send failed en1, 49
+I 1418592417 kernel[0]: en1: 802.11d country code set to 'X0'.
+I 1418590244 kernel[0]: PM response took 28013 ms (32, powerd)
+E 35 1418592417 discoveryd[55]: Basic DNSResolver UDNS Send(): UDP Sendto() failed to DNSNameServer 192.168.0.250 Port 53 errno 49, fd 61, ErrLogCount 8 ResolverIntf:5
+I 1418592417 sharingd[357]: 13:26:57.811 : SDStatusMonitor::kStatusWirelessPowerChanged
+I 1418592418 kernel[0]: en1: Supported channels 1 2 3 4 5 6 7 8 9 10 11 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 149 153 157 161 165
+I 1418592417 kernel[0]: AirPort: Link Down on en1. Reason 8 (Disassociated because station leaving).
+I 1418592417 kernel[0]: Wake reason: EHC1
