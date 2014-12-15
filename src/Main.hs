@@ -11,7 +11,11 @@ isError :: LogMessage -> Bool
 isError (LogMessage (Error _) _ _) = True
 isError _ = False
 
+demoteUnimportant :: Int -> LogMessage -> LogMessage
+demoteUnimportant limit lm@(LogMessage (Error lvl) ts msg) | lvl < limit = LogMessage Warning ts msg
+demoteUnimportant _ lm = lm
+
 main = do
   logs <- parse <$> readFile "serverlogs.log"
   putStrLn $ unlines $ show <$> filter (contains "AirPort") logs
-  putStrLn $ unlines $ show <$> filter (isError) logs
+  putStrLn $ unlines $ show <$> demoteUnimportant 30 <$> filter (isError) logs
