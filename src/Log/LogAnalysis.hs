@@ -4,7 +4,9 @@ import Control.Applicative ((<$>))
 
 import Log.Log
 
-parseMessage :: String -> Either String LogMessage
+type MaybeLogMessage = Either String LogMessage
+
+parseMessage :: String -> MaybeLogMessage
 parseMessage = work . words
 --             I 1418592417 This is an informative message
     where work ("I" :        ts' : xs) | (     ts) <- (           read ts') = Right $ LogMessage Info        ts $ unwords xs
