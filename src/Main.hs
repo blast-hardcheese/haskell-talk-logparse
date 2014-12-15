@@ -22,10 +22,13 @@ sortMessages = sortBy compareMsgs
 
 
 main = do
+  let putStrLogs = putStrLn . unlines . (fmap show)
+
   logs <- parse <$> readFile "serverlogs.log"
-  putStrLn $ unlines $ show <$> filter (contains "AirPort") logs
-  putStrLn $ unlines $ show <$> demoteUnimportant 30 <$> filter (isError) logs
+  putStrLogs $ filter (contains "AirPort") logs
+  putStrLogs $ demoteUnimportant 30 <$> filter (isError) logs
 
   logs <- parse <$> readFile "serverlogs-async.log"
-  putStrLn $ unlines $ fmap show $ filter (isError) $ (demoteUnimportant 30) <$> sortMessages logs
-  putStrLn $ unlines $ fmap show $ sortMessages $ filter (isError) $ (demoteUnimportant 30) <$> logs
+
+  putStrLogs $ filter (isError) $ (demoteUnimportant 30) <$> sortMessages logs
+  putStrLogs $ sortMessages $ filter (isError) $ (demoteUnimportant 30) <$> logs
